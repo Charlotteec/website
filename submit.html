@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <title>
 Believe In Yourself
@@ -12,15 +11,16 @@ Believe In Yourself
     <a href="./index.html" class="link">Home</a>
     <a href="./inspiration.html" class="link">Inspiration</a>
     <a href="./submit.html" class="link">Submit</a>
-
   </header>
-<p id="text">Dear </p>
-  <div class="circle">
-  <p id="test" class="text">
+  <form action="./form-handling.php">
+  <div id="submit">
+  <p class="text">
+    Enter a Message to be added:
   </p>
-  </div>
-
-  <button onclick= getMessage() class=button>Click me</button>
-
+  <textarea name="msg" method="post"> </textarea>
+  <input type="submit" value="Submit">
+</div>
+</form>
+  <?php echo $_POST["msg"]; ?>
 </body>
 </html>

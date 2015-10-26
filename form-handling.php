@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <title>
 Believe In Yourself
@@ -12,15 +11,9 @@ Believe In Yourself
     <a href="./index.html" class="link">Home</a>
     <a href="./inspiration.html" class="link">Inspiration</a>
     <a href="./submit.html" class="link">Submit</a>
-
   </header>
-<p id="text">Dear </p>
-  <div class="circle">
-  <p id="test" class="text">
-  </p>
-  </div>
-
-  <button onclick= getMessage() class=button>Click me</button>
-
+<p class="text">
+  Thank you for your submission
+  <?php echo $_POST["msg"]; ?>
 </body>
 </html>
